@@ -1,5 +1,5 @@
 # WikiShmedia 
-WikiShmedia is a wikipedia searchengine running on 3 Virtual Machines. 
+WikiShmedia is a wikipedia searchengine running on 3 Virtual Machines (2 Ubuntu VMs created using VirtualBox, and 1 AWS VM created via AWS).
 
 # Requirements
 VM1, VM2 and EC2VM must be running in order for the web application to run. The container

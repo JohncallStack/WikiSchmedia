@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<h1>WikiShmedia</h1>
+<h2> {{search_term}} Search Results</h2>
+<!--Link that Redirects to Homepage-->
+<h4> <a href="{{ url_for('home') }}">NEW SEARCH</a> </h4>
+<br>
+    <!--Iterating through each paragraph in the output. -->
+   {% for paragraph in output %}
+
+<!--Inserts each paragraph into it's own paragraph tag-->
+        <p>{{ paragraph }}</p>
+
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body >
+<div>
+    <h1 class = "indexheader">WikiShmedia</h1>
+</div>
+<div class = "indexformatting">
+    <form action = "/search" method="post">
+        <input type="text" size="30" name="search" id = "search" placeholder="Enter your search">
+        <br>
+        <input type ="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
